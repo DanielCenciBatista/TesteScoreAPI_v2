@@ -1,0 +1,156 @@
+[
+  {
+    "scenario": "Score 150 - renda < 60000 e idade < 25",
+    "expectedScore": 150,
+    "payload": {
+      "name": "Cliente Score 150",
+      "email": "score150@teste.com",
+      "birthDate": "2010-01-10",
+      "phone": {
+        "ddd": "11",
+        "number": "900001001"
+      },
+      "cpf": "10000000019",
+      "address": {
+        "street": "Rua A",
+        "number": "100",
+        "complement": "Casa",
+        "zipCode": "01001-000",
+        "state": "SP"
+      },
+      "annualIncome": 50000
+    }
+  },
+  {
+    "scenario": "Score 250 - renda 60000 a 120000 e idade < 25",
+    "expectedScore": 250,
+    "payload": {
+      "name": "Cliente Score 250",
+      "email": "score250@teste.com",
+      "birthDate": "2010-02-10",
+      "phone": {
+        "ddd": "21",
+        "number": "900002001"
+      },
+      "cpf": "10000000108",
+      "address": {
+        "street": "Rua B",
+        "number": "101",
+        "complement": "Ap 10",
+        "zipCode": "20000-000",
+        "state": "RJ"
+      },
+      "annualIncome": 60000
+    }
+  },
+  {
+    "scenario": "Score 300 - renda < 60000 e idade 25 a 40",
+    "expectedScore": 300,
+    "payload": {
+      "name": "Cliente Score 300",
+      "email": "score300@teste.com",
+      "birthDate": "1995-03-10",
+      "phone": {
+        "ddd": "31",
+        "number": "900003001"
+      },
+      "cpf": "10000000280",
+      "address": {
+        "street": "Rua C",
+        "number": "102",
+        "complement": "Fundos",
+        "zipCode": "30000-000",
+        "state": "MG"
+      },
+      "annualIncome": 59999
+    }
+  },
+  {
+    "scenario": "Score 350 - renda > 120000 e idade < 25",
+    "expectedScore": 350,
+    "payload": {
+      "name": "Cliente Score 350",
+      "email": "score350@teste.com",
+      "birthDate": "2010-04-10",
+      "phone": {
+        "ddd": "41",
+        "number": "900004001"
+      },
+      "cpf": "10000000361",
+      "address": {
+        "street": "Rua D",
+        "number": "103",
+        "complement": "Bloco B",
+        "zipCode": "80000-000",
+        "state": "PR"
+      },
+      "annualIncome": 120001
+    }
+  },
+  {
+    "scenario": "Score 400 - renda 60000 a 120000 e idade > 40",
+    "expectedScore": 400,
+    "payload": {
+      "name": "Cliente Score 400",
+      "email": "score400@teste.com",
+      "birthDate": "1970-05-10",
+      "phone": {
+        "ddd": "51",
+        "number": "900005001"
+      },
+      "cpf": "10000000442",
+      "address": {
+        "street": "Rua E",
+        "number": "104",
+        "complement": "Cobertura",
+        "zipCode": "90000-000",
+        "state": "RS"
+      },
+      "annualIncome": 120000
+    }
+  },
+  {
+    "scenario": "Score 450 - renda > 120000 e idade 25 a 40",
+    "expectedScore": 450,
+    "payload": {
+      "name": "Cliente Score 450",
+      "email": "score450@teste.com",
+      "birthDate": "1995-06-10",
+      "phone": {
+        "ddd": "61",
+        "number": "900006001"
+      },
+      "cpf": "10000000523",
+      "address": {
+        "street": "Rua F",
+        "number": "105",
+        "complement": "Sala 2",
+        "zipCode": "70000-000",
+        "state": "DF"
+      },
+      "annualIncome": 150000
+    }
+  },
+  {
+    "scenario": "Score 500 - renda > 120000 e idade > 40",
+    "expectedScore": 500,
+    "payload": {
+      "name": "Cliente Score 500",
+      "email": "score500@teste.com",
+      "birthDate": "1970-07-10",
+      "phone": {
+        "ddd": "71",
+        "number": "900007001"
+      },
+      "cpf": "10000000604",
+      "address": {
+        "street": "Rua G",
+        "number": "106",
+        "complement": "Loja 1",
+        "zipCode": "40000-000",
+        "state": "BA"
+      },
+      "annualIncome": 300000
+    }
+  }
+]

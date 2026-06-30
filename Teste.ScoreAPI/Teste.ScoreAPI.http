@@ -1,0 +1,58 @@
+@Teste.ScoreAPI_HostAddress = http://localhost:5181
+
+POST {{Teste.ScoreAPI_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "name": "Maria Silva",
+  "email": "maria.silva@email.com",
+  "birthDate": "1988-06-12",
+  "phone": {
+    "ddd": "11",
+    "number": "998877665"
+  },
+  "cpf": "529.982.247-25",
+  "address": {
+    "street": "Rua das Flores",
+    "number": "123",
+    "complement": "Apto 12",
+    "zipCode": "01001-000",
+    "state": "SP"
+  },
+  "annualIncome": 95000
+}
+
+###
+
+GET {{Teste.ScoreAPI_HostAddress}}/api/clientes/52998224725
+Accept: application/json
+
+###
+
+PUT {{Teste.ScoreAPI_HostAddress}}/api/clientes/52998224725
+Content-Type: application/json
+
+{
+  "name": "Maria Silva Atualizada",
+  "email": "maria.silva.atualizada@email.com",
+  "birthDate": "1980-06-12",
+  "phone": {
+    "ddd": "11",
+    "number": "977776666"
+  },
+  "address": {
+    "street": "Rua das Flores",
+    "number": "123",
+    "complement": "Apto 13",
+    "zipCode": "01001-000",
+    "state": "SP"
+  },
+  "annualIncome": 130000
+}
+
+###
+
+GET {{Teste.ScoreAPI_HostAddress}}/api/clientes
+Accept: application/json
+
+###
