@@ -29,7 +29,7 @@ public sealed class DatabaseInitializer
                     EnderecoLogradouro NVARCHAR(200) NULL,
                     EnderecoNumero NVARCHAR(20) NULL,
                     EnderecoComplemento NVARCHAR(200) NULL,
-                    EnderecoCep NVARCHAR(8) NULL,
+                    EnderecoCep NVARCHAR(15) NULL,
                     EnderecoUf CHAR(2) NOT NULL,
                     RendaAnual DECIMAL(18,2) NOT NULL,
                     CONSTRAINT UQ_Clientes_Cpf UNIQUE (Cpf)
